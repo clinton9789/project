@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User login</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Toaster -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+
+</head>
+<body background="images/image1.jpg">
+    <header id="header"></header>
+    <section class="login-section form-container">
+        <div class="form-title">
+            <h2>Login Page</h2>
+        </div>
+
+        <form id="loginForm" method="POST">
+            <div class="row">
+                <label for="email">Email: <span>*</span></label>
+                <input class="form-control" type="email" name="email" id="email" placeholder="Enter email"
+                    pattern="[a-z0-9._]+@[a-z.]+\.[a-z]{2,3}$" autocomplete="off" autofocus required>
+
+                <label for="password">Password: <span>*</span></label>
+                <input class="form-control" type="password" name="password" id="password" placeholder="Enter password"
+                    required>
+
+                <button class="btn btn-primary">Submit</button>
+                <button type="reset" class="btn btn-danger">Reset</button>
+
+            </div>
+
+            <p class="login-paragraph">Don't Have an Account? <a class="a-link a-secondary-hover"
+                    href="register.html">Sign-Up</a></p>
+        </form>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/env.js"></script>
+        <script src="js/userservice.js"></script>
+        <script src="js/validator.js"></script>
+        <script src="js/login.js"></script>
+        <script src="js/errormessage.js"></script>
+</body>

@@ -1,0 +1,109 @@
+/* --------------home---------------- */
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+}
+
+.welcome {
+  margin-left: 22%;
+  margin-right: 0;
+  margin-top: 35px;
+}
+
+.train-home {
+  margin-top: 8%;
+}
+
+.train-home h1 {
+  margin-top: 9%;
+  font-size: 30px;
+  color: #325B80;
+  text-align: center;
+}
+
+.party {
+  position: absolute;
+  bottom: 200px;
+  left: 300px;
+}
+
+.user1 {
+  font-size: 50px;
+  position: absolute;
+  left: 160px;
+  bottom: 300px;
+}
+
+.mirror {
+  position: absolute;
+  bottom: 200px;
+  right: 300px;
+}
+
+hr {
+  width: 10%;
+  margin-left: 45%;
+  margin-top: 1%;
+}
+
+/* -------------login----------- */
+.login-section {
+  margin-top: 10%;
+  margin-left: 37%;
+}
+
+.login-section button {
+  margin: 10% 5% 15% 5%;
+  cursor: pointer;
+}
+
+/* ---------------register------------- */
+.register-section {
+  margin-top: 10%;
+  margin-left: 35%;
+  margin-bottom: 5%;
+}
+
+.register-section button {
+  margin: 1% 17% 5% 8%;
+  cursor: pointer;
+}
+
+.register-section .home a {
+  color: #325B80;
+}
+
+h2 {
+  text-align: center;
+}
+
+.profile-h2 {
+  margin-top: 10%;
+}
+
+.third-btn {
+  margin-top: 10%;
+  margin-left: 30%;
+
+}
+
+body {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  color: red;
+}
+.contentcontent {
+  margin-left: 200px;
+  font-size: larger;
+  accent-color: red;
+}

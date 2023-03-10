@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Toaster -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+</head>
+
+<body background="images/image1.jpg">
+    <header id="header"></header>
+    <main>
+
+        <section class="register-section form-container">
+            <div class="form-title">
+                <h2>Registration with User Details</h2>
+            </div>
+
+            <form id="regForm" method="POST">
+
+                <div class="row">
+                    <label for="email">Email: <span>*</span></label>
+                    <input class="form-control" type="email" name="email" id="email" placeholder="Enter Email" required
+                        autofocus pattern="[a-z0-9._]+@[a-z.]+\.[a-z]{2,3}$" autocomplete="off"><br />
+                    <label for="password">Password: <span>*</span></label>
+                    <input class="form-control" type="password" name="password" id="password"
+                        placeholder="Enter Password" required><br />
+                    <label for="confirmPassword">Confirm Password: <span>*</span></label>
+                    <input class="form-control" type="password" name="confirmPassword" id="confirmPassword"
+                        placeholder="Enter confirm Password" required><br />
+                    <br />
+
+                    <label><strong>Personal Details:</strong></label><br>
+
+                    <label for="firstName">First Name: <span>*</span></label>
+                    <input class="form-control" type="text" name="firstName" id="firstName"
+                        placeholder="Enter your Name" required pattern="[A-Za-z ]{1,32}"><br />
+                    <label for="middleName">Middle Name: </label>
+                    <input class="form-control" type="text" name="middleName" id="middleName"
+                        placeholder="Enter your Name" pattern="[A-Za-z ]{1,32}"><br />
+                    <label for="lastName">Last Name: <span>*</span></label>
+                    <input class="form-control" type="text" name="lastName" id="lastName" placeholder="Enter your Name"
+                        required pattern="[A-Za-z ]{1,32}"><br />
+                    <label for="gender">Gender: <span>*</span></label>
+                    <input type="radio" name="gender" id="gender" value="Female" required checked>Female
+                    <input type="radio" name="gender" id="gender" value="Male">Male<br />
+                    <label for="dob">DOB: <span>*</span></label>
+                    <input class="form-control" type="date" name="dob" id="dob" required> <br />
+
+                    <label for="mobile">Mobile No: <span>*</span></label>
+                    <input class="form-control" type="number" name="mobile" id="mobile"
+                        placeholder="Enter your Mobile No" pattern="[6789][0-9]{9}" min=1 required> <br />
+                    <br />
+                    <button id="registerBtn" class="btn btn-primary">Submit</button>
+                    <button type="reset" class="btn btn-danger">Reset</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+
+    <script src="js/jquery.min.js"></script>
+
+
+    <script src="js/env.js"></script>
+    <script src="js/userservice.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/register.js"></script>
+
+    <script src="js/bussinessValidation.js"></script>
+
+    <script src="js/errormessage.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.6/dayjs.min.js"
+        integrity="sha512-bwD3VD/j6ypSSnyjuaURidZksoVx3L1RPvTkleC48SbHCZsemT3VKMD39KknPnH728LLXVMTisESIBOAb5/W0Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
